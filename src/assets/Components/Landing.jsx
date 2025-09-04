@@ -3,7 +3,8 @@ import Navbar from './Navbar'
 import Particles from './Particles'
 import DarkModeToggle from './DarkModeToggle'
 import BottomNavbar from './BottomNavbar'
-import InteractiveSkills from './InteractiveSkills'
+import AboutMe from './AboutMe'
+import Projects from './Projects'
 
 const items = [
   {
@@ -116,7 +117,10 @@ function Landing() {
     </div>
 
     {/* Skills section placed after landing */}
-    <InteractiveSkills />
+
+    {/* About Me section */}
+    <AboutMe isDarkMode={isDarkMode} />
+    <Projects isDarkMode={isDarkMode} />
 
   </>
   )
